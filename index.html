@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ROYAL CARS - Car Rental HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href=""><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href=""><i class="fa fa-envelope mr-2"></i>info@example.com</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-body px-3" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-body pl-3" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-uppercase text-primary mb-1">BOLD WHEEL RENTELS</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                       
+                        </div>
+                        <div class="nav-item dropdown">
+                            
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="team.html" class="dropdown-item">The Team</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Search Start -->
+    <div class="container-fluid bg-white pt-3 px-lg-5">
+        <div class="row mx-n2">
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Pickup Location</option>
+                    <option value="1">Garden</option>
+                    <option value="2">Saddar</option>
+                    <option value="3">Nazmabad</option>
+                    <option value="4">North Nazmabad</option>
+                    <option value="5">Garden East</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Drop Location</option>
+                    <option value="1">New Karachi</option>
+                    <option value="2">North Nazmabad</option>
+                    <option value="3">Garden West</option>
+                    <option value="4">Garden East</option>
+                    <option value="5">Saddar</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="date mb-3" id="date" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Date"
+                        data-target="#date" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <div class="time mb-3" id="time" data-target-input="nearest">
+                    <input type="text" class="form-control p-4 datetimepicker-input" placeholder="Pickup Time"
+                        data-target="#time" data-toggle="datetimepicker" />
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <select class="custom-select px-4 mb-3" style="height: 50px;">
+                    <option selected>Select A Car</option>
+                    <option value="1">Honda Civic</option>
+                    <option value="2">Suzuki Mehran</option>
+                    <option value="3">Suzuki Alto</option>
+                    <option value="4">Suzuki Swift</option>
+                    <option value="5">Toyota Fortuner</option>
+                </select>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 px-2">
+                <button class="btn btn-primary btn-block mb-3" type="submit" style="height: 50px;">Search</button>
+            </div>
+        </div>
+    </div>
+    <!-- Search End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0" style="margin-bottom: 90px;">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
+                            <h1 class="display-1 text-white mb-md-4">Best Rental Cars In Your Location</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Rent A Car</h4>
+                            <h1 class="display-1 text-white mb-md-4">Quality Cars with Unlimited Miles</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">01</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">BOLD WHEEL RENTELS</span></h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <img class="w-75 mb-4" src="img/about.png" alt="">
+                    <p>Welcome to [BOLD WHEEL RENTELS], your premier destination for hassle-free car rentals! Our website is your one-stop solution for all your transportation needs, offering a wide range of vehicles to suit every occasion and budget.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-headset text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">24/7 Car Rental Support</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-secondary p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-car text-secondary"></i>
+                        </div>
+                        <h4 class="text-light text-uppercase m-0">Car Reservation Anytime</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-2">
+                    <div class="d-flex align-items-center bg-light p-4 mb-4" style="height: 150px;">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary ml-n4 mr-4" style="width: 100px; height: 100px;">
+                            <i class="fa fa-2x fa-map-marker-alt text-secondary"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Lots Of Pickup Locations</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">02</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Our Services</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-taxi text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">01</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Car Rental</h4>
+                        <p class="m-0">>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item active d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-money-check-alt text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">02</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Car Financing</h4>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4" style="width: 80px; height: 80px;">
+                                <i class="fa fa-2x fa-car text-secondary"></i>
+                            </div>
+                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                        </div>
+                        <h4 class="text-uppercase mb-3">Car Inspection</h4>
+                        
+                    </div>
+                </div>
+               
+    <!-- Services End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="bg-banner py-5 px-4 text-center">
+                <div class="py-5">
+                    <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
+                    <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
+                    <p class="mb-4">Only for 3 DRIVE</p>
+                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Rent A Car Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">03</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Find Your Car</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="https://imgd.aeplcdn.com/370x208/n/cw/ec/27074/civic-exterior-right-front-three-quarter-148155.jpeg?q=80" alt="">
+                        <h4 class="text-uppercase mb-4">Honda Civic</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2015</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item active mb-4">
+                        <img class="img-fluid mb-4" src="data:image/jpeg;base64,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" alt="">
+                        <h4 class="text-uppercase mb-4">Suzuki Mehran</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2015</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="https://cdn.motor1.com/images/mgl/02EE3/s3/toyota-fortuner-gr-sport-indonesia.jpg" alt="">
+                        <h4 class="text-uppercase mb-4">Toyota Fortuner</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2015</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/car-rent-4.png" alt="">
+                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2015</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/car-rent-5.png" alt="">
+                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2015</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-2">
+                    <div class="rent-item mb-4">
+                        <img class="img-fluid mb-4" src="img/car-rent-6.png" alt="">
+                        <h4 class="text-uppercase mb-4">Mercedes Benz R3</h4>
+                        <div class="d-flex justify-content-center mb-4">
+                            <div class="px-2">
+                                <i class="fa fa-car text-primary mr-1"></i>
+                                <span>2015</span>
+                            </div>
+                            <div class="px-2 border-left border-right">
+                                <i class="fa fa-cogs text-primary mr-1"></i>
+                                <span>AUTO</span>
+                            </div>
+                            <div class="px-2">
+                                <i class="fa fa-road text-primary mr-1"></i>
+                                <span>25K</span>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary px-3" href="">$99.00/Day</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Rent A Car End -->
+
+
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-1 text-primary text-center">04</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
+            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Full Name</h4>
+                        <p class="m-0">Designation</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Full Name</h4>
+                        <p class="m-0">Designation</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Full Name</h4>
+                        <p class="m-0">Designation</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item">
+                    <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
+                    <div class="position-relative py-4">
+                        <h4 class="text-uppercase">Full Name</h4>
+                        <p class="m-0">Designation</p>
+                        <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row mx-0">
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="img/banner-left.png" alt="">
+                        <div class="text-right">
+                            <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
+                            <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
+                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 px-0">
+                    <div class="px-5 bg-dark d-flex align-items-center justify-content-between" style="height: 350px;">
+                        <div class="text-left">
+                            <h3 class="text-uppercase text-light mb-3">Looking for a car?</h3>
+                            <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
+                            <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
+                        </div>
+                        <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="img/banner-right.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <h1 class="display-1 text-primary text-center">05</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Our Client's Say</h1>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-1.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-2.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-3.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                </div>
+                <div class="testimonial-item d-flex flex-column justify-content-center px-4">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <img class="img-fluid ml-n4" src="img/testimonial-4.jpg" alt="">
+                        <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
+                    </div>
+                    <h4 class="text-uppercase mb-2">Client Name</h4>
+                    <i class="mb-2">Profession</i>
+                    <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <h1 class="display-1 text-primary text-center">06</h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Contact Us</h1>
+            <div class="row">
+                <div class="col-lg-7 mb-2">
+                    <div class="contact-form bg-light mb-4" style="padding: 30px;">
+                        <form>
+                            <div class="row">
+                                <div class="col-6 form-group">
+                                    <input type="text" class="form-control p-4" placeholder="Your Name" required="required">
+                                </div>
+                                <div class="col-6 form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Your Email" required="required">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control p-4" placeholder="Subject" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" required="required"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-2">
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Head Office</h5>
+                                <p>123 Street, New York, USA</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Branch Office</h5>
+                                <p>123 Street, New York, USA</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Customer Service</h5>
+                                <p>customer@example.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                            <div class="mt-n1">
+                                <h5 class="text-light">Return & Refund</h5>
+                                <p class="m-0">refund@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="owl-carousel vendor-carousel">
+                <div class="bg-light p-4">
+                    <img src="img/vendor-1.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-2.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-3.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-4.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-5.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-6.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-7.png" alt="">
+                </div>
+                <div class="bg-light p-4">
+                    <img src="img/vendor-8.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt text-white mr-3"></i>123 Street, New York, USA</p>
+                <p class="mb-2"><i class="fa fa-phone-alt text-white mr-3"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope text-white mr-3"></i>info@example.com</p>
+                <h6 class="text-uppercase text-white py-2">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-dark btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Private Policy</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term & Conditions</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>New Member Registration</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Affiliate Programme</a>
+                    <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Return & Refund</a>
+                    <a class="text-body" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Help & FQAs</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
+                <div class="row mx-n1">
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-1.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-2.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-3.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-4.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-5.jpg" alt=""></a>
+                    </div>
+                    <div class="col-4 px-1 mb-2">
+                        <a href=""><img class="w-100" src="img/gallery-6.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
+                <p class="mb-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <div class="w-100 mb-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <i>Lorem sit sed elitr sed kasd et</i>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark py-4 px-sm-3 px-md-5">
+        <p class="mb-2 text-center text-body">&copy; <a href="#">Your Site Name</a>. All Rights Reserved.</p>
+        <p class="m-0 text-center text-body">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
